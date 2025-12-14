@@ -1,119 +1,70 @@
-Mini Instagram Clone (Full Stack)
+# Getting Started with Create React App
 
-A mini Instagram-style application built to understand full-stack web development, authentication, social relationships, and RESTful APIs.
-This project includes core Instagram features like user authentication, posts, likes, comments, follow system, and feed generation.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-🚀 Features
-🔐 Authentication
-User Signup
-User Login
-Password hashing for security
-JWT-based authentication for protected routes
+## Available Scripts
 
-👥 Follow System
-Follow another user
-Unfollow a user
-Maintain followers & following relationships
+In the project directory, you can run:
 
-🖼️ Post Management
-Authenticated users can create posts
-Each post includes:
-Image URL
-Caption
-View posts by users you follow
+### `npm start`
 
-❤️ Likes
-Like a post
-Unlike a post
-Prevent duplicate likes from the same user
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-💬 Comments
-Comment on posts
-Display commenter name and comment text
-Real-time UI updates without page refresh
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-📰 Feed
-Personalized feed API
-Shows posts only from users you follow
-Sorted by latest posts
-🖥️ Frontend Screens
-🔑 Login & Signup
-Secure token storage
-Redirect after successful authentication
+### `npm test`
 
-🏠 Home Feed
-View posts with:
-Image
-Caption
-Likes
-Comments
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-➕ Create Post
-Add image URL and caption
-Instant post rendering after creation
+### `npm run build`
 
-👤 Profile Page
-User posts
-Followers / Following count
-Follow / Unfollow button
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-📄 Post Detail Page
-Full post view
-Interactive like & comment system
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-🛠️ Tech Stack
-Backend
-Node.js
-Express.js
-MongoDB
-JWT Authentication
-bcrypt for password hashing
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Frontend
-React / Next.js
-Axios / Fetch API
-State Management using React Hooks
-Responsive UI design
+### `npm run eject`
 
-📡 API Overview (Sample)
-Method	Endpoint	Description
-POST	/api/auth/signup	Register new user
-POST	/api/auth/login	Login user
-POST	/api/posts	Create post
-GET	/api/feed	Get user feed
-POST	/api/posts/:id/like	Like a post
-POST	/api/posts/:id/comment	Comment on post
-POST	/api/users/:id/follow	Follow user
-POST	/api/users/:id/unfollow	Unfollow user
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-⚙️ Installation & Setup
-1️⃣ Clone Repository
-git clone https://github.com/your-username/instagram-clone.git
-cd instagram-clone
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-2️⃣ Backend Setup
-cd backend
-npm install
-npm run dev
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-Create a .env file:
-MONGO_URI=your_mongodb_uri
-JWT_SECRET=your_secret_key
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-3️⃣ Frontend Setup
-cd frontend
-npm install
-npm run dev
+## Learn More
 
-🎯 Learning Outcomes
-Implement JWT-based authentication
-Design MongoDB schemas with relationships
-Build RESTful APIs
-Handle likes, comments, and follow logic
-Manage frontend state efficiently
-Connect frontend with backend securely
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-👩‍💻 Author
-Siya Kusumakar
-Computer Science Engineering Student
-Learning full-stack development 🚀
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
